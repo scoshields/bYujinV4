@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent-green text-background px-4 py-2 rounded-md hover:bg-accent-green-hover transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-accent-blue text-background px-4 py-2 rounded-md hover:bg-accent-blue-hover transition-colors;
+  }
+  
+  .card {
+    @apply bg-surface border border-divider rounded-lg shadow-lg;
+  }
+}
